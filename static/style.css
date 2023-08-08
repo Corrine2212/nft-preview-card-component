@@ -1,0 +1,173 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&display=swap');
+
+/*
+  1. Use a more-intuitive box-sizing model.
+*/
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+/*
+  2. Remove default margin
+*/
+* {
+    margin: 0;
+}
+
+/*
+  Typographic tweaks!
+  3. Add accessible line-height
+  4. Improve text rendering
+*/
+body {
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    font-family: 'Outfit', sans-serif;
+    background: hsl(217, 54%, 11%);
+}
+
+/*
+    5. Improve media defaults
+  */
+img,
+picture,
+video,
+canvas,
+svg {
+    display: block;
+    max-width: 100%;
+}
+
+/*
+    6. Remove built-in form typography styles
+  */
+input,
+button,
+textarea,
+select {
+    font: inherit;
+}
+
+/*
+    7. Avoid text overflows
+  */
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    overflow-wrap: break-word;
+}
+
+/* font stylings */
+h1 {
+    color: hsl(0, 0%, 100%);
+    font-weight: 600;
+    font-size: 20px;
+}
+
+h2 {
+    font-weight: 400;
+    font-size: 16px;
+    color: hsl(215, 32%, 60%);
+    line-height: 1.4rem;
+}
+
+/* card stylings */
+.card {
+    background-color: hsl(216, 50%, 16%);
+    border-radius: 15px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    box-shadow: 10px 10px 10px hsla(217, 54%, 11%, 0.7);
+    gap: 15px;
+
+}
+
+.main-image {
+    border-radius: 10px;
+    box-shadow: 10px 10px 10px hsla(217, 54%, 11%, 0.3);
+    height: 260px;
+    width: 260px;
+}
+
+.icon-area {
+    display: flex;
+    justify-content: space-between;
+}
+
+.eth-wrapper, .countdown-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+}
+
+.eth-number {
+    color: hsl(178, 100%, 50%);
+    font-weight: 600;
+    font-size: .88rem;
+}
+
+.days {
+    color: hsl(215, 32%, 60%);
+    font-weight: 300;
+    font-size: .88rem;
+}
+
+.creator-wrapper {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 5px;
+}
+
+.creator {
+    color: hsl(215, 32%, 60%);
+    font-size: .88rem;
+}
+
+.creator-image {
+    height: 30px;
+    border: 1px solid hsl(0, 0%, 100%);
+    border-radius: 100%;
+}
+
+hr {
+   border: 0.5px solid hsl(215, 32%, 27%);
+   border-radius: 100%;
+}
+
+span {
+    color: hsl(0, 0%, 100%);
+}
+
+.clock, .diamond {
+    height: 15px;
+}
+
+.attribution {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding: 10px;
+  
+    font-size: 11px;
+    text-align: center;
+    color: hsl(0, 0%, 100%);
+  }
+  
+  .attribution a {
+    color: hsl(32, 100%, 50%);
+  }
